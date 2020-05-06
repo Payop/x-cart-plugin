@@ -1,0 +1,11 @@
+version: 5.4.0.0
+type: common
+authorName: PayOp
+moduleName: PayOp
+description: 'Enables receiving payments for your online store via PayOp'
+minorRequiredCoreVersion: 0
+dependsOn: {  }
+incompatibleWith: {  }
+skins: {  }
+showSettingsForm: true
+canDisable: true

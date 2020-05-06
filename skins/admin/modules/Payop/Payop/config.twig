@@ -1,0 +1,37 @@
+<table cellspacing="1" cellpadding="5" class="settings-table">
+    <tr>
+        <td class="setting-name">
+            <label for="settings_publickey">{{ t('Public key') }}</label>
+        </td>
+        <td>
+            <input type="text" id="settings_publickey" name="settings[publickey]" size="64" value="{{ this.paymentMethod.getSetting('publickey') }}" class="validate[required,maxSize[255]]" />
+        </td>
+    </tr>
+    <tr>
+        <td class="setting-name">
+            <label for="settings_secretkey">{{ t('Secret key') }}</label>
+        </td>
+        <td>
+            <input type="text" id="settings_secretkey" name="settings[secretkey]" size="64" value="{{ this.paymentMethod.getSetting('secretkey') }}" class="validate[required,maxSize[255]]" />
+        </td>
+    </tr>
+    <tr>
+        <td class="setting-name">
+            <label for="settings_jwttoken">{{ t('JWT token') }}</label>
+        </td>
+        <td>
+            <input type="text" id="settings_jwttoken" name="settings[jwttoken]" size="64" value="{{ this.paymentMethod.getSetting('jwttoken') }}" class="validate[required,maxSize[270]]" />
+        </td>
+    </tr>
+    <tr>
+        <td class="setting-name">
+            <label for="settings_language">{{ t('Language')}}</label>
+        </td>
+        <td>
+            <select id="settings_language" name="settings[language]">
+                <option value="en" {% if this.paymentMethod.getSetting('language') == 'en' %} selected="selected" {% endif %}>EN</option>
+                <option value="ru" {% if this.paymentMethod.getSetting('language') == 'ru' %} selected="selected" {% endif %}>RU</option>
+            </select>
+        </td>
+    </tr>
+</table>

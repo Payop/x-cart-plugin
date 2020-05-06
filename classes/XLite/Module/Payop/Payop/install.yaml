@@ -1,0 +1,20 @@
+XLite\Model\Payment\Method:
+  - service_name: Payop
+    class: Module\Payop\Payop\Model\Payment\Processor\Payop
+    type: C
+    translations:
+      - code: en
+        name: Payop
+    settings:
+      - name: publickey
+      - name: secretkey
+      - name: jwttoken
+      - name: language
+        value: en
+
+XLite\Model\LanguageLabel:
+  - { directives: { allowedModel: 'XLite\Model\LanguageLabelTranslation' } }
+  - { name: 'Public key', translations: [{ code: 'en', label: 'Public key' }, { code: 'ru', label: 'Публичный ключ' }] }
+  - { name: 'Secret key', translations: [{ code: 'en', label: 'Secret key' }, { code: 'ru', label: 'Секретный ключ' }] }
+  - { name: 'JWT token', translations: [{ code: 'en', label: 'JWT token' }, { code: 'ru', label: 'JWT токен' }] }
+  - { name: 'Language', translations: [{ code: 'en', label: 'Language of payment page' }, { code: 'ru', label: 'Язык платежной страницы' }]}
