@@ -30,7 +30,8 @@ Use the following parameters to configure your PayOp project:
 ## Support
 
 * [Open an issue](https://github.com/Payop/x-cart-plugin/issues) if you are having issues with this plugin.
-* [PayOp Documentation](https://payop.com/en/documentation/common/)
+* [PayOp FAQ](https://payop.com/en/faq)
+* [PayOp API](https://github.com/Payop/payop-api-doc)
 * [Contact PayOp support](https://payop.com/en/contact-us/)
   
 **TIP**: When contacting support, it will be helpful if you also provide some additional information, such as:
